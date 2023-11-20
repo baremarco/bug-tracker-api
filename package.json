@@ -1,7 +1,7 @@
 {
-  "name": "web-crawler",
+  "name": "bug-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "crud api for a bug tracker system",
   "main": "index.js",
   "scripts": {
     "build": "tsc --watch"
