@@ -3,8 +3,11 @@ import 'dotenv/config';
 import 'express-async-errors';
 import express from 'express';
 import 'reflect-metadata';
+import cors from 'cors';
 
 import { router as bugRouter } from './routes/bug.route';
+import { router as userRouter } from './routes/user.route';
+import { router as projectRouter } from './routes/project.route';
 import { AppDataSource } from './config/data-source';
 import { errorHandlerMiddleware } from './middlewares/error-handler';
 
@@ -12,7 +15,10 @@ const app = express();
 
 // set middleware
 app.use(express.json());
+app.use(cors());
 app.use('/api/v1', bugRouter);
+app.use('/api/v1', userRouter);
+app.use('/api/v1', projectRouter);
 
 // set error handler
 app.use(errorHandlerMiddleware);
