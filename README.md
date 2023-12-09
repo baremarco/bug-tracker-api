@@ -1,2 +1,12 @@
-# ts-linter-node-skeleton
-A node project ready to start working on with the initial config already setted using typescript, eslint and prettier
+# Bug tracker api
+
+### Running the project
+1. start the db
+```bash
+docker compose up -d
+```
+2. run the api
+```bash
+npm run dev
+```
+### DB connection info

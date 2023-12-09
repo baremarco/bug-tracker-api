@@ -4,12 +4,14 @@
   "description": "crud api for a bug tracker system",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --watch"
+    "build": "tsc --watch",
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "Marco Bareño",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.9.4",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "eslint": "^8.47.0",
@@ -19,7 +21,20 @@
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^3.0.1",
     "prettier": "3.0.2",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "class-validator": "^0.14.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.3.0",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
   }
 }
